@@ -6,6 +6,103 @@
 <title>School Classes Rating</title>
 <style>
   body {
+      margin: 0;
+      overflow: hidden;
+      background-color: #f0f0f0;
+      position: relative;
+  }
+
+  .heart {
+      width: 50px;
+      height: 50px;
+      background-image: url('https://emojicdn.elk.sh/❤️');
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      animation: flyHeart 5s linear infinite;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+
+  
+  @keyframes flyHeart {
+      0% {
+          transform: translateX(0) translateY(0) rotate(0);
+      }
+      25% {
+          transform: translateX(200px) translateY(-100px) rotate(45deg);
+      }
+      50% {
+          transform: translateX(400px) translateY(0) rotate(90deg);
+      }
+      75% {
+          transform: translateX(200px) translateY(100px) rotate(135deg);
+      }
+      100% {
+          transform: translateX(0) translateY(0) rotate(180deg);
+      }
+  }
+</style>
+</head>
+<body>
+
+<div class="heart"></div>
+
+</div>
+<style>
+    body {
+        margin: 0;
+        overflow: hidden;
+        background-color: #f0f0f0;
+        position: relative;
+    }
+
+    .heart {
+        width: 50px;
+        height: 50px;
+        background-image: url('https://emojicdn.elk.sh/❤️');
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        animation: flyHeart 5s linear infinite;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .chatbox {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        border-top: 1px solid #ccc;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    @keyframes flyHeart {
+        0% {
+            transform: translateX(0) translateY(0) rotate(0);
+        }
+        25% {
+            transform: translateX(200px) translateY(-100px) rotate(45deg);
+        }
+        50% {
+            transform: translateX(400px) translateY(0) rotate(90deg);
+        }
+        75% {
+            transform: translateX(200px) translateY(100px) rotate(135deg);
+        }
+        100% {
+            transform: translateX(0) translateY(0) rotate(180deg);
+        }
+    }
+</style>
+
+<style>
+  body {
     font-family: Arial, sans-serif;
   }
 
@@ -111,5 +208,14 @@
   <button type="submit">Submit</button>
 </form>
 
-</body>
+</head>
+ 
+<body>
+
+    <p>Unfortunately, the video cannot be embedded directly. You can watch it on YouTube:</p>
+    <a href="https://youtu.be/E3Im5raB0b0?feature=shared" target="_blank">Watch the video</a>
+    
+    </body>
+
+ 
 </html>
