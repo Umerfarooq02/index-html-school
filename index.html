@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>School Classes Rating</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  select, input[type="radio"] {
+    margin-bottom: 15px;
+  }
+
+  button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  .face {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .very-easy {
+    color: green;
+  }
+
+  .easy {
+    color: limegreen;
+  }
+
+  .moderate {
+    color: #ffc107;
+  }
+
+  .difficult {
+    color: orange;
+  }
+
+  .very-difficult {
+    color: red;
+  }
+</style>
+</head>
+<body>
+
+<h1>Rehan How's classes at school? Let's discuss it.</h1>
+
+<form action="#">
+  <label for="class_interest">1. How interesting are they?</label>
+  <select id="class_interest" name="class_interest">
+    <option value="1">1 - Not interesting at all</option>
+    <option value="2">2 - Slightly interesting</option>
+    <option value="3">3 - Moderately interesting</option>
+    <option value="4">4 - Quite interesting</option>
+    <option value="5">5 - Very interesting</option>
+  </select>
+  <br>
+
+  <label for="feedback">2. Did you get feedback?</label>
+  <input type="radio" id="feedback_yes" name="feedback" value="yes">
+  <label for="feedback_yes">Yes</label>
+  <input type="radio" id="feedback_no" name="feedback" value="no">
+  <label for="feedback_no">No</label>
+  <br>
+
+  <label for="easiest_subject">3. Which subject is easiest for you?</label>
+  <select id="easiest_subject" name="easiest_subject">
+    <option value="english">English</option>
+    <option value="math">Math</option>
+    <option value="science">Science</option>
+  </select>
+  <br>
+
+  <label for="most_difficult">How would you rate this term overall?</label>
+  <select id="most_difficult" name="most_difficult">
+    <option value="1">1 - Very easy <span class="face very-easy">&#128516;</span></option>
+    <option value="2">2 - Easy <span class="face easy">&#128578;</span></option>
+    <option value="3">3 - Moderate <span class="face moderate">&#128528;</span></option>
+    <option value="4">4 - Difficult <span class="face difficult">&#128533;</span></option>
+    <option value="5">5 - Very difficult <span class="face very-difficult">&#128545;</span></option>
+  </select>
+  <br>
+
+  <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
